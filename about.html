@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The Moddle Project Website: About the project">
+		<meta name="author" content="Diamond Sword Development">
+		
+		<title>Moddle</title>
+		
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap theme -->
+		<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<link href="theme.css" rel="stylesheet">
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body role="document" style="background-color:#C0C0C0;">
+		
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#E0E0E0;">
+			<div class="container">
+				<div class="navbar-header">
+			  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+			  		</button>
+			  		<a class="navbar-brand" href="index.html"><img src="images/brand.png" alt="Moddle Logo" style="max-width:196px; margin-top: -6px;"></a>
+				</div>
+				<div class="navbar-collapse collapse">
+			  		<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li class="active"><a href="about.html"><span class="glyphicon glyphicon-book"></span> About</a></li>
+						<li><a href="credits.html"><span class="glyphicon glyphicon-asterisk"></span> Credits</a></li>
+						<li><a href="videos.html"><span class="glyphicon glyphicon-film"></span> Videos</a></li>
+						<li><a href="download.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+						<li><a href="news.html"><span class="glyphicon glyphicon-comment"></span> News</a></li>
+						<li><a href="support.html"><span class="glyphicon glyphicon-user"></span> Support Moddle</a></li>
+			  		</ul>
+				</div>
+		  	</div>
+		</div>
+	
+	
+		<div class="container theme-showcase" role="main">
+	
+			<div class="col-sm-12">
+			
+		  		<div class="well" style="background-image:none;">
+		  			<h1>About the Moddle project</h1>
+		  			<hr style="border-color:#BBBBBB;">
+		  			
+		  			<div class="col-sm-4 pull-right">
+					  	<div class="panel panel-primary">
+							<div class="panel-heading">
+						  		<h3 class="panel-title"><b>About Us:</b></h3>
+							</div>
+							<div class="panel-body">
+								
+								<p>Current members of the Moddle Dev Team:</p>
+								
+								<div style="max-width:100%;">
+									<img src="images/greenlock.png" alt="Greenlock's profile picture" class="pull-right" style="max-width:64px;max-height:64px;"/>
+									<p><b>Greenlock28</b><br>Very Green<br><i>Email: pokedoxysm@gmail.com<br>Twitter: @Greenlock28<br>GitHub: Greenlock</i></p>
+								</div>
+								
+								<div style="max-width:100%;">
+									<img src="images/nathan2055.png" alt="Nathan's profile picture" class="pull-right" style="max-width:64px;max-height:64px;"/>
+									<p><b>Nathan2055</b><br>Mad Man with a Computer Box<br><i>Twitter: @Nathan2055_<br>GitHub: Nathan2055</i></p>
+								</div>
+								
+								<br>
+								
+								<p>Most of us can be contacted on Twitter, Minecraft Forum, or Reddit.  Feel free to send us a PM if you need to talk to any of us.</p>
+								
+							</div>
+					  	</div>
+					</div>
+		  			
+		  			<h2>Overview</h2>
+		  			<div style="line-height:1.5;font-size:18px;">
+						<p>In short, Moddle is a Minecraft launcher that let's you create, play, and distribute your very own modpacks quickly and easily.  It is a project to revolutionize modpack building as we know it today.  We have two equally-important goals for this project.  The first is to build the best possible modpack-creation platform: A launcher that offers incomparable ease-of-use, but is more powerful than any modpack platform ever before.  Our second goal is to be 100% community-oriented.  As members of the Minecraft and modding communities, we wanted to build "a modpack platform by the players, for the players".  With that goal in mind, it was a given that Moddle be completely Open Source.  As such, our complete codebase is available on GitHub in our <a href="https://github.com/DiamondSwordDev/moddle">project repository</a>, licensed under the MIT license.</p>
+		  			</div>
+		  			<h2>How it Works</h2>
+		  			<div style="line-height:1.5;font-size:18px;">
+		  				<p>Moddle is built around the core concept of the Universal Mod Cache.  The Universal Mod Cache (or just 'Cache' for short) is a folder in which the launcher stores all of the mods necessary to build its modpacks.  This means that modpack creators no longer need to collect and package each mod themselves into a large distributable archive along with their config files.  Instead, they need only provide a Moddle-compatible config file listing the mods to install and any other configuration options for the modpack.</p>
+		  				<p>Another one of the more powerful features of Moddle is auto-configuration.  When using mods provided in the Cache, the launcher can automatically set up each mod's configuration files to cooperate with the other mods that are being installed.  This auto-configuration system also handles block and item IDs, which means that you will be able to safely transfer worlds from one modpack to another!</p>
+		  				<p>It is important to note that, due to our early development stage (See dev status section below), we have not yet implemented a user interface for building modpacks.  This is not to say that building a modpack will be hard as a result; creating modpacks is an easy process as it is now.  You can learn how to build packs by watching <a href="videos.html">our tutorial videos</a>.</p>
+		  			</div>
+		  			<h2>Permissions</h2>
+		  			<div style="line-height:1.5;font-size:18px;">
+		  				<p>Everyone who has worked with modpacks before knows that mod permissions are a more-than-important requirement to creating your modpack.  Although Moddle is not a "modpack" technically speaking, we do not include any mods in the Cache that do not give permission for their use in public modpacks.  You can include these mods in your own private packs by adding them to the mini-caches of those packs, but they will not and cannot be used in modpacks that we distribute as default modpacks or ones that can be classified as a "public modpack".  Automated permissions validation was included in older versions of the launcher.  This feature is not yet built into the newest versions, but we will be working on it.</p>
+		  			</div>
+		  			<h2>Development Status</h2>
+		  			<div style="line-height:1.5;font-size:18px;">
+		  				<p>The Moddle launcher is still under full development.  Shortly after starting work on the project, however, we decided to distribute 'pre-release' versions of the launcher.  Having pre-1.0 versions used actively will help us get player feedback early, find nasty bugs, and get suggestions on how to improve the application.  It will drive us towards our goal of community-integration in ways that we could not achieve with a generic release schedule.</p>
+		  				<p>You can help us by getting Moddle and trying it out for yourself!  Report crashes and bugs that you encounter on our GitHub <a href="https://github.com/DiamondSwordDev/moddle/issues">issue tracker</a>.  Feedback and suggestions can also be submitted on the issue tracker.  Tell us what your impressions are, what features you want, or even how you think the launcher should look.  We need your opinions to make this the best launcher that it can possibly be!</p>
+		  			</div>
+		  			<br>
+		  			
+		  			<div class="col-sm-4">
+			  			<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><b>Try it out:</b></h3>
+							</div>
+							<div class="panel-body" style="font-size:18px;">
+								<p>So now you know what this project is all about!  Why not give it a try?  The current version can be downloaded from our download page.</p>
+			  					<p><a href="download.html" class="btn btn-warning btn-lg" role="button">Downloads &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4">
+			  			<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><b>Learn how to use Moddle:</b></h3>
+							</div>
+							<div class="panel-body" style="font-size:18px;">
+								<p>Want to learn about how to use the launcher, or build your own modpacks?  We have tutorial videos just for you!</p>
+			  					<p><a href="videos.html" class="btn btn-success btn-lg" role="button">Videos &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4">
+			  			<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><b>See our Special Thanks:</b></h3>
+							</div>
+							<div class="panel-body" style="font-size:18px;">
+								<p>We have a whole page dedicated to listing and thanking the awesome people to who make our project possible.  Why not check it out?</p>
+			  					<p><a href="credits.html" class="btn btn-primary btn-lg" role="button">Credits &raquo;</a></p>
+							</div>
+						</div>
+					</div>
+					
+					<p>&nbsp;</p>
+		  			
+		  		</div>
+		  		
+	   		</div>
+	   		
+		</div>
+			
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="jquery/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+	</body>
+	
+</html>
